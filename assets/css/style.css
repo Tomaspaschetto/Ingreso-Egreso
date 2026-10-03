@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1c2a39;
+}
+
+.navbar {
+    background: #123c69;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.login-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0b1f33 0%, #1e5f74 100%);
+    padding: 2rem;
+}
+
+.login-card {
+    background: rgba(255,255,255,0.96);
+    border-radius: 18px;
+    padding: 2.5rem;
+    width: min(460px, 100%);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.login-card h1, .page-title {
+    margin-top: 0;
+    color: #123c69;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    color: #37516a;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid #d0d9e6;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid rgba(18,60,105,0.2);
+    border-color: #123c69;
+}
+
+button {
+    background: #123c69;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0d2d4f;
+}
+
+.btn {
+    display: inline-block;
+    width: auto;
+    min-width: 220px;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btn-large {
+    min-width: 260px;
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+}
+
+.btn-secondary {
+    background: #5a6e7d;
+}
+
+.btn-success {
+    background: #2ca66a;
+}
+
+.btn-danger {
+    background: #d9534f;
+}
+
+.employee-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 0 8px 18px rgba(18,60,105,0.08);
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #123c69;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: top;
+}
+
+th {
+    background: #edf5ff;
+    color: #123c69;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.badge-primary { background: #0d6efd; }
+.badge-success { background: #2ca66a; }
+.badge-info { background: #3a8dde; }
+.badge-warning { background: #eb9f2f; }
+.badge-danger { background: #d9544f; }
+.badge-secondary { background: #6c757d; }
+
+.actions a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: #123c69;
+    font-weight: bold;
+}
+
+.alert {
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.alert-success {
+    background: #eafaf1;
+    color: #1c7c54;
+    border: 1px solid #bfe7d1;
+}
+
+.alert-error {
+    background: #feedee;
+    color: #a63a39;
+    border: 1px solid #f0b5b5;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.two-col > * {
+    flex: 1 1 260px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.muted {
+    color: #5d6f84;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+}
